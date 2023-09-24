@@ -1,0 +1,41 @@
+
+  container{
+    align-items:center;
+    justify-content: center;
+}
+img{
+    max-width: 25%;
+    max-height: 15%;
+    float: left;
+    margin: -10px 20px 0px 20px;
+    margin-bottom: 0px;
+
+}
+
+text{
+    float: left;
+    padding: -0px;
+    text-align: justify;
+    
+    
+}
+h1{
+    
+    font-family: cursive;
+    margin-left: 180px;
+    margin-bottom: -10px;
+    
+}
+h2{
+    padding-top: 0px;
+    font-family: cursive;
+    
+}
+#nickname{
+    margin-top: -10px;
+}
+p{
+    margin-bottom: -15px;
+    font-family: cursive;
+
+}
