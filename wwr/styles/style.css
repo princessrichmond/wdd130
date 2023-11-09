@@ -206,6 +206,85 @@ main section img {
 }
 
 
+/* Rivers CSS */
+#rivers-hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
+#rivers-hero-img{
+    width: 100%;
+}
+#rivers-hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#rivers-hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    text-align: center;
+}
+#rivers-hero-msg h4{
+    color: white;
+    margin-top: 0;
+}
+#rivers-hero-msg h1{
+    color: #d9c2a3;
+    text-shadow: 2px 2px white;
+    margin-top: 70px;
+    margin-bottom: 0;
+    font-size: 100px;
+}
+.rivers-home-title{
+    font-family: 'Lora', 'Nunito', Raleway;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.rivers-container{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 90%;
+    margin: 5rem auto 0 auto;
+}
+.rivers-container img{
+    max-width: 400px;
+    max-height: 200%;
+}
+.rivers-container h2{
+    margin:0;
+    padding-left: 20px;
+}
+.rivers-container p{
+    padding: 0 0 0 20px ;
+    font-size: 20px;
+}
+
+.rivers-container-utah img{
+    max-width: 400px;
+    max-height: 200%;
+    float: right;
+}
+.rivers-container-utah{
+    /* background-color: #FCA311; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 90%;
+    margin: 5rem auto 0 auto;
+}
+
+.rivers-container-utah p{
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+
+/*Rivers CSS end*/
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
