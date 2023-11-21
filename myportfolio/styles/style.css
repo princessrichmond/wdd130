@@ -91,11 +91,20 @@ footer .social img{
     align-self: center;
 }
 
-/* home page start */
-/* .li_image{
-    height: 65px;
-} */
 
+/* home page start */
+.home-container{
+    position:relative;
+    display: inline-block;
+}
+.li_image{
+    height: 65px;
+    border-radius: 0%;
+}
+
+/* .home-container{
+  
+} */
 div{
     resize: both;
 }
@@ -110,11 +119,13 @@ footer{
     padding-top: 30px;
 }
 .home-text{
-    top: 500px;
-    left: 100px;
+    top: 35%;
+    float: left;
+    right: 800px;
     padding: 50px;
     position:absolute;
-    /* z-index: 1; */
+    flex-wrap: wrap;
+    z-index: inherit;
     background-color: white;
     color: black;
     height: 500px;
