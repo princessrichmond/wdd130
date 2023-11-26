@@ -6,9 +6,12 @@
 }
 
 #content{
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
     position: relative;
+    display: grid;
+    grid-template-columns: 10fr;
+    
 }
 
 body{
@@ -27,7 +30,7 @@ header{
     background-color:#ea638c;
     color:#EEEEEE;
     display: grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns:150px auto;
 }
 nav a:hover{
     background-color: #89023e;
@@ -75,10 +78,13 @@ footer p a:hover {
 }    
 footer .social img{
     padding-top: 15px;
+    height: 50px;
+    padding-right: 10px;
 }
 .logo{
     width: 80px;
     border-radius: 50%;
+    
 }
 .icon{
     width: 80px;
@@ -87,59 +93,63 @@ footer .social img{
 
 #logo_link{
     padding-top: 5px;
-    justify-self: center;
-    align-self: center;
+    padding-left: 50px;
+    /* justify-self: center;
+    align-self: center; */
 }
 
 
 /* home page start */
 .home-container{
     position:relative;
-    display: inline-block;
-}
-.li_image{
-    height: 65px;
-    border-radius: 0%;
-}
-
-/* .home-container{
-  
-} */
-div{
-    resize: both;
-}
-.home{
-    width: 100%;
-    height: 100%;
+    overflow: hidden;
     
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: 10fr auto;
+    position: relative;
 }
 
 footer{
     margin-top: -1%;
     padding-top: 30px;
 }
+.home-text, .home-img{
+    position: relative;
+    max-height: 700px;
+   
+}
+.home-img{
+    width: 100%;
+    object-fit: cover;
+}
+
 .home-text{
-    top: 35%;
-    float: left;
-    right: 800px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 340px;
     padding: 50px;
-    position:absolute;
-    flex-wrap: wrap;
-    z-index: inherit;
+    border: 3px solid;
+    padding-bottom: 10px;
+    display: flex;
+    padding-top: 0%;
+    z-index: 1;
     background-color: white;
     color: black;
-    height: 500px;
-    width: 600px;
-    font-size: 28px;
+    height: 300px;
+    width: 400px;
+    font-size: 18px;
     text-align: center;
     
 }
 
+
 /* About CSS */
-#content{
+/* #content{
     border-style:groove;
     
-}
+} */
 .about-grid{
     background-color: white;
     height: 1500px;
@@ -299,5 +309,39 @@ footer{
     footer {
         margin-top: 25px;
     }
-   
+    .home-img, .home-text {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 0%;
+    }
+    .home-text{
+        overflow: scroll;
+    }
+    .about-img, .about-text {
+        width: 80%;
+        display: inline;
+        
+    }
+    .about-img{
+       margin: auto;
+    
+    }
+    .about-text{
+        overflow: scroll;
+        position: relative;
+        
+    }
+    .work-img, .work-text{
+        width: 80%;
+        display: inline-block;
+        margin: 0 auto;
+        position: relative;
+    }
+    .work-container::after{
+        height: 150%;
+    }
+    .work-text{
+        overflow: scroll;
+    }
 }
