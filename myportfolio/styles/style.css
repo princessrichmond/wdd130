@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: 10fr;
     
+    
 }
 
 body{
@@ -102,7 +103,6 @@ footer .social img{
 /* home page start */
 .home-container{
     position:relative;
-    overflow: hidden;
     
 }
 .home-grid{
@@ -110,6 +110,7 @@ footer .social img{
     grid-template-columns: 10fr auto;
     position: relative;
 }
+
 
 footer{
     margin-top: -1%;
