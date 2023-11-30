@@ -40,7 +40,7 @@ nav a:hover{
 
 nav{
     display: flex;
-    /* justify-content: space-around; */
+  
 }
 
 nav a{
@@ -55,6 +55,7 @@ nav a{
     font-size: 2em;
 }
 footer{
+    
     color: #000000;
     background-color: #ffd9da;
     padding: 25px 50px;
@@ -64,12 +65,10 @@ footer{
     align-items: center;
 }
 footer a{
-   
     text-decoration: none;
 }
 footer a:hover{
     background-color: #E5E5E5;
-    /* color:#89023e; */
 }
 footer p {
     font-size: 1.2em;
@@ -82,6 +81,7 @@ footer .social img{
     height: 50px;
     padding-right: 10px;
 }
+
 .logo{
     width: 80px;
     border-radius: 50%;
@@ -95,10 +95,7 @@ footer .social img{
 #logo_link{
     padding-top: 5px;
     padding-left: 50px;
-    /* justify-self: center;
-    align-self: center; */
 }
-
 
 /* home page start */
 .home-container{
@@ -147,44 +144,121 @@ footer{
 
 
 /* About CSS */
-/* #content{
-    border-style:groove;
+.column {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    float: left;
+    flex: 50%;
     
-} */
+  }
+  
+  .left {
+    width: 20%;
+  }
+  
+  .right {
+    width: 80%;
+  }
+.row {
+    display: flex;
+  }
+.about-text h2{
+    color: #89023e;
+    
+}
+
 .about-grid{
     background-color: white;
-    height: 1500px;
+    height: 100%;
     width: 100%;
-}
-.about-text{
-    float:right;
-    top: 200px;
-    right: 100px;
-    padding: 50px;
-    padding-top: 30px;
-    position:absolute;
-    background-color: white;
-    color: black;
-    height: 1200px;
-    width: 600px;
-    font-size: 25px;
-    text-align: center;
-    border-style:solid;
-}
-.about-img img{
-    padding-left: 100px;
-}
-.img1{
-    height: 400px;
-    width: 600px;
-    padding-top: 250px;
     
 }
-.img2{
-    height: 400px;
-    display: block;
-    padding-top: 200px;
+.about-text{
+    width: 400px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px;
+    border: 3px solid;
+
 }
+
+
+/* flip-about page */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card img{
+    object-fit: cover;
+}
+.img2{
+    width: 240px;
+}
+.flip-card {
+    padding-top: 250px;
+    position: relative;
+    margin: auto;
+    background-color: transparent;
+    width: 240px;
+    height: 300px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #89023e;
+    color: white;
+    transform: rotateY(180deg);
+    
+  }
+  .flip-card-back h3{
+    padding-top: 50px;
+  }
+  .social-flip .fb, .li, .ig{
+    width: 30px;
+    height: 30px;
+    background-color: #89023e;
+  }
+  .social-flip:focus{
+    background-color: #89023e;
+  }
+ 
+/* flip end */
+
 
 /* Work CSS */
 #work-content{
@@ -261,27 +335,14 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 900px) {
-    
+    .column {
+        width: 80%;
+        padding-left: 20px;
+      }
+    .about-text{
+        border: none;
+    }
     .home-grid {
         display: block;
         height: auto;
