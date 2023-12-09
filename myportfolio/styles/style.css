@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Alike&family=Lato&family=PT+Serif&family=Roboto+Serif:opsz,wght@8..144,300&display=swap');
-
 :root{
 --heading-font: "Alike";
 --paragraph-font: Lato;
@@ -159,8 +158,9 @@ footer{
   .right {
     width: 80%;
   }
-.row {
+.about-row {
     display: flex;
+    
   }
 .about-text h2{
     color: #89023e;
@@ -257,58 +257,111 @@ footer{
     background-color: #89023e;
   }
  
-/* flip end */
-
 
 /* Work CSS */
+.work-home-title{
+    font-family: Alike;
+    font-size: 2em;
+    padding-top: 70px;
+    padding-left: 120px;
+    margin-bottom: 0px;
+    float: left;
+    
+}
 #work-content{
     max-width: 1600px;
     height: 1000px;
     margin: 0 auto;
 }
 .work-grid{
-    height: 100%;
+    background-color: white;
+    
 }
-.work-home-title{
-    font-family: Alike;
-    font-size: 2em;
-    padding-top: 100px;
-    padding-left: 90px;
-    margin-bottom: 0px;
+.work-column1{
     float: left;
+    width: 20%;
+    
 }
-.work-container{
+.work-column2{
     float: left;
+    width: 70%;
+}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .work-row{
     display: flex;
-    justify-content: space-between;
-    width: 87%;
-    height: 47%;
-    /* margin: 5rem auto 0 auto; */
-    margin-left: 100px;
-    
+    margin: 125px;
     border: solid;
+    background-color: #89023e;
+    color: #ffffff;
+  }
+  
+  .work-column1 {
+    flex: 20%;
+    position: relative;
     
-}
-.work-container img{
-    max-width: 300px;
-    max-height: 500px;
+  }
+  .work-column2 {
+    float: left;
+    
+  }
+  .work-column1 img{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    padding: 80px 50px 80px 40px;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .work-column1:hover .rivers {
+    opacity: 0.6;
+  }
+  
+  .work-column1:hover .middle {
+    opacity: 1;
+  }
+  .btn {
+    background-color: #ea638c;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-color: #ffffff;
+  }
+  .work-column2 h2{
     padding-top: 50px;
-    padding-left: 40px;
-    
-}
-.work-container h2{
-    margin:0;
-    padding-left: 20px;
-}
-.work-container p{
-    padding: 0 0 0 20px ;
-    font-size: 22px;
+  }
+  .work-column2 p{
+    padding-right: 40px;
+    padding-top: 0;
     text-align: justify;
-}
-.work-text{
-    padding: 50px;
-}
-/*Work CSS end*/
+    font-size: 18px;
+    text-indent: 40px;
+  }
+  
+/*   
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+  } */
+
+
 
 /* Contact CSS */
 .contact-grid p{
@@ -325,16 +378,6 @@ footer{
 /* Contact CSS End */
 
 
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 900px) {
     .column {
         width: 80%;
@@ -342,6 +385,8 @@ footer{
       }
     .about-text{
         border: none;
+        overflow: scroll;
+        position: relative;
     }
     .home-grid {
         display: block;
@@ -359,6 +404,7 @@ footer{
         display: none;
         margin-top: 0;
         position: relative;
+        overflow: scroll;
     }
     
     .home-title {
@@ -377,9 +423,6 @@ footer{
         margin: 0 auto;
         padding-bottom: 0%;
     }
-    .home-text{
-        overflow: scroll;
-    }
     .about-img, .about-text {
         width: 80%;
         display: inline;
@@ -389,21 +432,25 @@ footer{
        margin: auto;
     
     }
-    .about-text{
-        overflow: scroll;
-        position: relative;
-        
-    }
-    .work-img, .work-text{
-        width: 80%;
-        display: inline-block;
-        margin: 0 auto;
-        position: relative;
-    }
     .work-container::after{
         height: 150%;
     }
     .work-text{
         overflow: scroll;
     }
+   /* .work-column1, .work-column2{
+        width: 100%;
+   } */
+   .work-row{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+  .work-column2 {
+    margin: 60px;
+    width: 80%;
+  }
+  .work-column1{
+    margin: auto 0%;
+  }
+  
 }
