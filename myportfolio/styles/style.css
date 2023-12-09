@@ -279,78 +279,72 @@ footer{
 }
 .work-column1{
     float: left;
-    width: 20%;
+    flex: 30%;
+    position: relative;
+    margin: auto 0%;
     
 }
 .work-column2{
     float: left;
     width: 70%;
-}
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .work-row{
-    display: flex;
-    margin: 125px;
-    border: solid;
-    background-color: #89023e;
-    color: #ffffff;
-  }
-  
-  .work-column1 {
-    flex: 20%;
     position: relative;
-    
-  }
-  .work-column2 {
-    float: left;
-    
-  }
-  .work-column1 img{
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    height: 300px;
-    width: 300px;
-    margin: auto;
-    padding: 80px 50px 80px 40px;
-  }
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .work-column1:hover .rivers {
-    opacity: 0.6;
-  }
-  
-  .work-column1:hover .middle {
-    opacity: 1;
-  }
-  .btn {
-    background-color: #ea638c;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-    border-color: #ffffff;
-  }
-  .work-column2 h2{
-    padding-top: 50px;
-  }
-  .work-column2 p{
-    padding-right: 40px;
-    padding-top: 0;
-    text-align: justify;
-    font-size: 18px;
-    text-indent: 40px;
-  }
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.work-row{
+  display: flex;
+  margin: 125px;
+  border: solid;
+  background-color: #89023e;
+  color: #ffffff;
+}
+
+.work-column1 img{
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  padding: 80px 50px 80px 40px;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.work-column1:hover .rivers {
+  opacity: 0.6;
+}
+
+.work-column1:hover .middle {
+  opacity: 1;
+}
+.btn {
+  background-color: #ea638c;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-color: #ffffff;
+}
+.work-column2 h2{
+  padding-top: 50px;
+}
+.work-column2 p{
+  padding-right: 40px;
+  padding-top: 0;
+  text-align: justify;
+  font-size: 18px;
+  text-indent: 40px;
+}
   
 /*   
   .left {
@@ -451,6 +445,9 @@ footer{
   }
   .work-column1{
     margin: auto 0%;
+  }
+  .work-column1, .work-column2{
+    gap: 20px;
   }
   
 }
