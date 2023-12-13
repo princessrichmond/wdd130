@@ -21,11 +21,7 @@ body{
     margin: 0;
     padding: 0;
 }
-/* .home-title{
-    font-family: 'Lato', 'Roboto Serif', PT serif;
-    font-size: 2em;
-    margin-top: 10px;
-} */
+
 header{
     background-color:#ea638c;
     color:#EEEEEE;
@@ -164,7 +160,7 @@ footer{
   }
 .about-text h2{
     color: #89023e;
-    
+    font-family: alike;
 }
 
 .about-grid{
@@ -181,7 +177,7 @@ footer{
     text-align: center;
     padding: 50px;
     border: 3px solid;
-
+    font-family: lato;
 }
 
 
@@ -328,13 +324,6 @@ footer{
 .work-column1:hover .middle {
   opacity: 1;
 }
-/* .btn {
-  background-color: #ea638c;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-  border-color: #ffffff;
-} */
 .middle a{
   text-decoration: none;
   font-size: 16px;
@@ -345,6 +334,7 @@ footer{
 }
 .work-column2 h2{
   padding-top: 50px;
+  font-family: alike;
 }
 .work-column2 p{
   padding-right: 40px;
@@ -352,6 +342,7 @@ footer{
   text-align: justify;
   font-size: 18px;
   text-indent: 40px;
+  font-family: lato;
 }
 
 s
