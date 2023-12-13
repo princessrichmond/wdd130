@@ -328,12 +328,17 @@ footer{
 .work-column1:hover .middle {
   opacity: 1;
 }
-.btn {
+/* .btn {
   background-color: #ea638c;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
   border-color: #ffffff;
+} */
+.middle a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
 }
 .work-column2 h2{
   padding-top: 50px;
